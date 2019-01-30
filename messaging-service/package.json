@@ -1,0 +1,19 @@
+{
+  "name": "messaging-service",
+  "version": "1.0.0",
+  "description": "Service",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "author": "",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.8",
+    "nodemon": "^1.18.9",
+    "uuid": "^3.3.2"
+  }
+}

@@ -1,0 +1,28 @@
+<form class="form">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Service URL" [(ngModel)]="message.serviceUrl" name="serviceUrl">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea matInput 
+              placeholder="Recipients (put ',' without whitespaces after each recipient id except the last one)"
+              [(ngModel)]="message.recipients" name="recipients">
+    </textarea>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput 
+           placeholder="Message subject"
+           [(ngModel)]="message.subject" name="subject">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea matInput placeholder="Message body"
+              [(ngModel)]="message.body" name="recipients">
+    </textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="send()">Send message</button>
+
+  <h4 *ngIf="msgId" style="color: green">Message with ID {{msgId}} has been successfully sent!</h4>
+</form>
